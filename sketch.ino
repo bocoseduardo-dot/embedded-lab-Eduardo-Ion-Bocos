@@ -10,7 +10,7 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly: 
   int AD_c = analogRead(A2) ;
-  int PWM = map(AD_c, 0, 1023, 0, 255);
+  int PWM = map(AD_c, 0, 1023, 0, 256);
   analogWrite(9,PWM);
 
   if(millis()-Last_time > 1000){
