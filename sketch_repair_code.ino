@@ -10,7 +10,7 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly: 
   int AD_c = analogRead(A2) ;
-  int PWM = map(AD_c, 0, 1023, 0, 256);
+  int PWM = map(AD_c, 0, 1023, 0, 255);
   if (AD_c > 512) {
     digitalWrite(2,1);
   }else{
